@@ -44,8 +44,8 @@ class MyGallery extends Component{
 }
  componentDidMount(){
     this.getMovies('harry%20potter','Search1')
-    this.getMovies('star%20wars','Search2')
-    this.getMovies('superman','Search3')
+    this.getMovies('guardians','Search2')
+    this.getMovies('barbie','Search3')
     
  }
  render(){
