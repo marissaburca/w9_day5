@@ -68,7 +68,7 @@ class MyGallery extends Component{
             )}
             { this.state.Search1.slice(0,6).map((movie, index)=>{
                 return (
-            <Col key={index} sx={12} sm={6} md={3} lg={2} xl={2} className='mb-3'>
+            <Col key={index} sx={12} sm={6} md={3} lg={2} xl={2} className='mb-1 px-1'>
             <Card>
             <Card.Img variant="top" alt={movie.Title} src={movie.Poster} id='new'/>
             </Card>
@@ -77,7 +77,7 @@ class MyGallery extends Component{
            }
         </Row>
         <Row className='mt-3' >
-            <h4 className='ps-3 mt-4 mb-2'>Watch it Again</h4>
+            <h4 className='ps-3 mt-4 mb-2 pb-2'>Watch it Again</h4>
         </Row>
         <Row className='main-row'>
             {this.state.isLoading && (
@@ -92,7 +92,7 @@ class MyGallery extends Component{
             )}
             { this.state.Search2.slice(0,6).map((movie, index)=>{
                 return (
-            <Col key={index} sx={12} sm={6} md={3} lg={2} xl={2} className='mb-3'>
+            <Col key={index} sx={12} sm={6} md={3} lg={2} xl={2} className='mb-1 px-1'>
             <Card>
             <Card.Img variant="top" alt={movie.Title} src={movie.Poster} id='new'/>
             </Card>
@@ -116,7 +116,7 @@ class MyGallery extends Component{
             )}
             { this.state.Search3.slice(0,6).map((movie, index)=>{
                 return (
-            <Col key={index} sx={12} sm={6} md={3} lg={2} xl={2} >
+            <Col key={index} sx={12} sm={6} md={3} lg={2} xl={2} className='mb-1 px-1'>
             <Card>
             <Card.Img variant="top" alt={movie.Title} src={movie.Poster} id='new'/>
             </Card>

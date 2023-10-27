@@ -4,4 +4,10 @@
   aspect-ratio: 14/9;
   object-fit: cover;
   object-position: 10% 20%;
+  transition: transform 0.3s ease;
+}
+#new:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index:1;
 }
