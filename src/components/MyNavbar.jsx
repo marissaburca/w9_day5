@@ -5,8 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NewLogo from '../NewLogo.png'
+import { Link, useLocation } from 'react-router-dom';
+
 
 const MyNavbar =()=>{
+    const location = useLocation()
     return(
     
         <Navbar expand='lg' data-bs-theme="dark" style={{ backgroundColor : '#221f1f'}}>
@@ -23,8 +26,8 @@ const MyNavbar =()=>{
           </Button>
           <NavbarCollapse id="navbarSupportedContent">
             <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
-                <Nav.Link className="active fw-bold" href="#">Home</Nav.Link>
-                <Nav.Link className="fw-bold" href="#">TV Shows</Nav.Link>
+            <Link className={`fw-bold nav-link ${location.pathname === '/ '? 'active' : ''}`}   to="/" >Home</Link>
+                <Link className={`fw-bold nav-link ${location.pathname === '/TvShows'? 'active' : ''}`}   to="/TvShows" >TV Shows</Link>
                 <Nav.Link className="fw-bold" href="#">Movies</Nav.Link>
                 <Nav.Link className="fw-bold" href="#">Recently Added</Nav.Link>
                 <Nav.Link className="fw-bold" href="#">My List</Nav.Link>
